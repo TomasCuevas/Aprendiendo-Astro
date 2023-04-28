@@ -1,2 +1,42 @@
-<h1>Mis servicios</h1>
-<p>Ut proident excepteur aute ea pariatur dolor deserunt culpa do ex anim. Dolore laborum veniam ex fugiat minim nostrud duis est ullamco minim. Tempor ex non commodo labore culpa ad sunt. Non culpa esse exercitation aute aliqua esse esse incididunt esse tempor excepteur nulla. Culpa nulla cillum proident aliquip.</p>
+---
+import Card from "../components/Card.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis servicios</title>
+  </head>
+  <body>
+    <h1>Mis servicios</h1>
+    <p>
+      Ut proident excepteur aute ea pariatur dolor deserunt culpa do ex anim.
+      Dolore laborum veniam ex fugiat minim nostrud duis est ullamco minim.
+      Tempor ex non commodo labore culpa ad sunt. Non culpa esse exercitation
+      aute aliqua esse esse incididunt esse tempor excepteur nulla. Culpa nulla
+      cillum proident aliquip.
+    </p>
+
+    <Card title="hola mundo" body="este es una prueba" />
+    <Card title="programacion" body="servicio de programacion" />
+    <Card title="diseño" body="diseños webs personalizados" />
+    <Card title="asistencia" body="asistencia web profesional" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #202020;
+        color: white;
+        font-family: sans-serif;
+        margin: 0 4rem;
+      }
+    </style>
+  </body>
+</html>
