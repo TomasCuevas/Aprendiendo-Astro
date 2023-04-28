@@ -1,15 +1,44 @@
 ---
+const title = 'Mi proyecto en Astro'
+const color = 'warning';
+
+const hobbies = ['Programar', 'Leer', 'Escribir', 'Ver peliculas'];
+
+const isActive = true;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Bienvenido a mi WEB</h1>
-	</body>
-</html>
+<h1 class={color}>{title}</h1>
+
+<ul>
+	{hobbies.map((hobbie) => (
+		<li>
+			<h3>{hobbie}</h3>
+			<button>Like</button>
+		</li>
+	))}
+</ul>
+
+<h3 class={isActive ? 'success' : 'danger' }>
+	{isActive ? 'El usuario esta activo.' : 'EL usuario no esta activo'}
+</h3>
+
+<script>
+	console.log( 'Hola Mundo' );
+</script>
+
+<style>
+	body {
+		background-color: #202020;
+		color: white;
+	}
+
+	.success {
+		color: green
+	}
+	.danger {
+		color: red;
+	}
+	.warning {
+		color: yellow;
+	}
+</style>
