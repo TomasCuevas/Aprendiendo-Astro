@@ -1,12 +1,19 @@
 ---
 import { Layout } from "../../layouts/index.astro";
+import PexelImage from "../../images/pexel.jpeg";
 
 const posts = await Astro.glob("./posts/*.md");
-console.log(posts);
 ---
 
 <Layout title="Blogs de desarrollo">
   <h1>Blog</h1>
+
+  <img width="200" src={PexelImage} alt="pexel image" />
+  <img
+    width="200"
+    src="https://images.pexels.com/photos/16179008/pexels-photo-16179008.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+    alt="pexel image"
+  />
 
   {
     posts.map((post) => (
