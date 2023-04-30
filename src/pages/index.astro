@@ -1,8 +1,32 @@
 ---
+import { ButtonSubscribe } from "../components/ButtonSubscribe";
 import { Layout } from "../layouts/index.astro";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 ---
 
 <Layout title="Pagina principal">
   <h1>Pagina inicial</h1>
   <p>Bienvenido a mi blog</p>
+
+  <p>
+    Deserunt nulla nisi ea tempor consectetur cupidatat qui veniam quis laboris
+    ullamco non. Consequat ullamco eiusmod dolor consequat sit consequat.
+    Consequat ut deserunt mollit duis eiusmod qui qui quis. Sint ex amet aliquip
+    ullamco deserunt. Aliqua tempor aute ullamco Lorem eiusmod aliqua
+    adipisicing aute amet cillum in duis nulla. Aute occaecat aliquip eiusmod
+    nostrud sunt id. Anim esse magna ex Lorem magna est aliquip duis et
+    consectetur. Ut laboris dolore irure ex eiusmod aute aliquip. Eiusmod
+    proident in esse voluptate do incididunt aliquip aliqua voluptate eiusmod
+    tempor. Deserunt aute ad laboris quis officia labore esse occaecat. Velit
+    laboris est minim anim. Velit non esse aliqua non in officia ut esse ex
+    elit. Pariatur veniam velit voluptate dolore excepteur ea. Exercitation
+    mollit dolore cupidatat est elit do esse occaecat incididunt. Non nulla et
+    proident enim ullamco dolore quis enim dolore. Adipisicing anim sint in
+    aliqua labore incididunt nisi sit nostrud eu et. Magna ipsum cupidatat qui
+    labore id nisi elit qui commodo velit ex ipsum dolor incididunt.
+  </p>
+
+  <ButtonSubscribe client:load />
+  <ToastContainer client:load />
 </Layout>
