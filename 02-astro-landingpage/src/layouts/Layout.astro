@@ -1,4 +1,8 @@
 ---
+// components
+import Footer from "../components/Footer.astro";
+
+// styles
 import "../styles/layout.css";
 
 interface Props {
@@ -21,5 +25,6 @@ const { title, description } = Astro.props;
     <main class="mx-auto container md:py-10 py-0">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
